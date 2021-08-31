@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>PIXEL 2 PLAY</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"> -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index-test.html" id="logo"><img src="images/logo4.png" width="130" alt=""
+                        class="img-fluid"></a>
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <div class="" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <div class="dropdown">
+
+                                <a class="nav-link categories ml-2 ml-lg-0" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Menu <i class="fa fa-angle-down"></i>
+                                </a>
+
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="ad-upload.html">Upload</a>
+                                    <a class="dropdown-item" href="dramas.html">Dramas</a>
+                                    <a class="dropdown-item" href="ent-shows.html">Entertainement Shows</a>
+                                    <a class="dropdown-item" href="sport.html">Sports</a>
+                                    <a class="dropdown-item" href="web-tv.html">Web Tv</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item ml-2 ml-lg-0">
+                            <div class="dropdown">
+
+                                <a class="nav-link categories" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-user"></i> Admin
+                                </a>
+
+
+                                <div class="dropdown-menu dropdown-menu-right user-right"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Profile Settings</a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <div class="clearfix"></div>
+    <main style="padding-top: 80px;">
+        <div class="container-fluid">
+            <div class="analytics">
+                <div class="analytics-content-head text-center mb-4" style="color: #fff;">
+                    <div class="mb-2">
+                        <h1><b>Add Advertisement</b></h1>
+                    </div>
+                    <div class="row m-0 align-items-center">
+                        <div class="form-group col-md-3">
+                            <select name="" id="" class="form-control select2bs4 ort_select">
+                                <option value="">Select Orientation</option>
+                                <option value="">Horizontal Image</option>
+                                <option value="">Vertical Image</option>
+                                <option value="">Both</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <select name="" id="" class="form-control select2bs4">
+                                <option value="">Select Page</option>
+                                <option value="">Movies</option>
+                                <option value="">Dramas</option>
+                                <option value="">Entertainement Shows</option>
+                                <option value="">Sports</option>
+                                <option value="">Web Tv</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4 text-left">
+                            <input type="checkbox" id="cbx" style="display: none;">
+                    <label for="cbx" class="check mr-1">
+                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                            <path
+                                d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                            </path>
+                            <polyline points="1 9 7 14 15 4"></polyline>
+                        </svg>
+                    </label>
+                    <label for="cbx">Want to add for Mobile View Also? Check this</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="analytics-content mt-4">
+                    <div class="row m-0 justify-content-center">
+                        <div class="col-lg-9 mb-4">
+                            <div class="analytics-col-inner">
+                                <div class="row m-0 justify-content-between">
+                                    <div class="upl-img">
+                                        <label for="">Upload horizontal image</label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                                aria-describedby="inputGroupFileAddon01" accept="image/*"
+                                                onchange="loadFile(event)">
+                                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                        </div>
+                                    </div>
+                                    <div class="imgPreview_horizontal">
+                                        <img id="horizontalImg" class="img-fluid" style="height: 100%;">
+                                        <!-- <span style="color: black;">Attach File to Preview</span> -->
+                                    </div>
+                                </div>
+                                <div>
+                                    <input type="url" name="" id="" class="form-control mt-4" placeholder="Add Link To This Ad">
+                                </div>
+                            </div>
+                            <div class="analytics-col-inner mt-4">
+                                <div class="row m-0 justify-content-between">
+                                    <div class="upl-img">
+                                        <label for="">Upload horizontal image for Mobile View</label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                                aria-describedby="inputGroupFileAddon01" accept="image/*"
+                                                onchange="loadFileMob(event)">
+                                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                        </div>
+                                    </div>
+                                    <div class="imgPreview_horizontal">
+                                        <img id="horizontalImgMobView" class="img-fluid" style="height: 100%;">
+                                        <!-- <span style="color: black;">Attach File to Preview</span> -->
+                                    </div>
+                                </div>
+                                <div>
+                                    <input type="url" name="" id="" class="form-control mt-4" placeholder="Add Link To This Ad">
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="col-lg-3 mb-4">
+                            <div class="analytics-col-inner">
+                                <div class="row m-0 justify-content-between">
+                                    <div class="upl-img">
+                                        <!--  -->
+                                        <label for="">Upload vertical image</label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                                aria-describedby="inputGroupFileAddon01" accept="image/*"
+                                                onchange="loadFileVert(event)">
+                                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                        </div>
+                                        <!--  -->
+                                    </div>
+                                    <div class="imgPreview_vertical">
+                                        <img id="verticalImg" class="img-fluid" style="height: 100%;">
+                                        <!-- <span style="color: black;">Attach File to Preview</span> -->
+                                    </div>
+                                </div>
+                                <div>
+                                    <input type="url" name="" id="" class="form-control mt-4" placeholder="Add Link To This Ad">
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                    <div class="mt-2 text-right">
+                        <button class="btn btn-main" style="width: 200px">Upload</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark p-1 p-md-2 p-md-4 text-center mt-4">
+        <div class="container">
+            <div class="copyright-container">
+                <h5>Copyrights &copy; 2019 <a href="index.php" class="powered">Pixel 2 Play</a> | All Right Reserved
+                    Powered By <a href="https://pixus-tech.com/" target="_blank" class="powered">Pixus</a></h5>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="sliding-text">
+                <marquee behavior="scroll" direction="right" scrollamount="15">Promote Your Business On Our Website By
+                    Advertising</marquee>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        (function () {
+            var dropzone = document.getElementById('dropzone');
+            var upload = function (files) {
+                console.log(files)
+            }
+            dropzone.ondrop = function (d) {
+                d.preventDefault();
+                this.className = 'dropzone';
+                upload(d.dataTransfer.files)
+            };
+            dropzone.ondragover = function () {
+                this.className = 'dropzone dragover';
+                return false;
+            };
+            dropzone.ondragleave = function () {
+                this.className = 'dropzone';
+                return false;
+            };
+        }());
+    </script>
+    <script>
+        var ort_select = document.querySelector('.ort_select option');
+        ort_select.each(function(){
+            if(ort_select == ort_select.attr("selected")){
+                document.write("error");
+            }
+        })
+    </script>
+</body>
+
+</html>
